@@ -43,5 +43,11 @@ elif choose==1 and comp==0:
   print("you win")
 elif choose==2 and comp==1:
   print("you win")
-else:
+elif choose==0 and comp==1:
   print("you lose")
+elif choose==2 and comp==0:
+  print("you lose")
+elif choose==1 and comp==2:
+  print("you lose")
+else:
+  print("you entered invalid input")
