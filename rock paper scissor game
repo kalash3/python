@@ -1,0 +1,47 @@
+import random
+rock=("""
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+""")
+
+
+paper=("""
+     _______
+---'    ____)____
+           ______)
+          _______)
+         _______)
+---.__________)
+""")
+
+scissor=("""
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+""")
+
+
+choice=input("what do you choose? type 0 for rock , 1 for paper , 2 for Scissors\n")
+choose=int(choice)
+comp=random.randint(0,2)
+hand=[rock,paper,scissor]
+print(hand[choose])
+print("computer choose:")
+print(hand[comp])
+if choose==comp:
+  print("its a tie")
+elif choose==0 and comp==2:
+  print("you win")
+elif choose==1 and comp==0:
+  print("you win")
+elif choose==2 and comp==1:
+  print("you win")
+else:
+  print("you lose")
